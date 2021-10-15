@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-blog-sistemi",
+  "version": "1.0.0",
+  "description": "nodejs blog sistemi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HasanKaya53/nodejs-blog-sistemi.git"
+  },
+  "author": "Hasan Kaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HasanKaya53/nodejs-blog-sistemi/issues"
+  },
+  "homepage": "https://github.com/HasanKaya53/nodejs-blog-sistemi#readme"
+}
