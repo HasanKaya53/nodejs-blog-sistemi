@@ -3,8 +3,11 @@
     Web sayfasını burda ayağa kaldırıyorum.
 */
 
+//seo içeriklerini çektiğim modul
 const indexSeo = require('./../views/seo/indexRoutesSeo')
 
+//mongoDB bağlantısından önce test veriler için kullandığım veriler
+const blogYazilari = require('./../models/blogModel')
 
 const express = require('express'),
       router  = express.Router();
@@ -13,7 +16,7 @@ const express = require('express'),
 
 
 router.get('/',(req,res) => {
-    res.status(200).render("home",{seo:indexSeo.seo["index"]});
+    res.status(200).render("home",{seo:indexSeo.seo["index"],dbBlogYazilari:blogYazilari});
 })
 
 router.get('/blog',(req,res)=>{
