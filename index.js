@@ -23,6 +23,7 @@ const mongoose = require('mongoose'),
 
 // routes
 const indexRoute = require('./routes/indexRoutes')
+const adminRoute = require('./routes/adminRoutes')
 
 // Config 
 app.set('view engine','ejs')
@@ -32,6 +33,7 @@ app.use(express.static("public"))
 
 // routes using
 app.use(indexRoute)
+app.use(adminRoute)
 
 
 const server = app.listen(4000,(err)=>{

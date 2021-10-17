@@ -16,19 +16,19 @@ const express = require('express'),
 
 
 router.get('/',(req,res) => {
-    res.status(200).render("home",{seo:indexSeo.seo["index"],dbBlogYazilari:blogYazilari});
+    res.status(200).render("user/home",{seo:indexSeo.seo["index"],dbBlogYazilari:blogYazilari});
 })
 
 router.get('/blog',(req,res)=>{
-    res.status(200).render('blog',{seo:indexSeo.seo["blog"]})
+    res.status(200).render('user/blog',{seo:indexSeo.seo["blog"]})
 })
 
 router.get('/hakkimizda',(req,res)=>{
-    res.status(200).render('hakkimizda',{seo:indexSeo.seo["hakkimizda"]})
+    res.status(200).render('user/hakkimizda',{seo:indexSeo.seo["hakkimizda"]})
 })
 
 router.get('/iletisim',(req,res)=>{
-    res.status(200).render('iletisim',{seo:indexSeo.seo["iletisim"]})
+    res.status(200).render('user/iletisim',{seo:indexSeo.seo["iletisim"]})
 })
 
 
