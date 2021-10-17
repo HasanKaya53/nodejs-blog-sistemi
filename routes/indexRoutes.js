@@ -7,7 +7,7 @@
 const indexSeo = require('./../views/seo/indexRoutesSeo')
 
 //mongoDB bağlantısından önce test veriler için kullandığım veriler
-const blogYazilari = require('./../models/blogModel')
+// const blogYazilari = require('./../models/blogModel')
 
 const express = require('express'),
       router  = express.Router();
@@ -15,8 +15,11 @@ const express = require('express'),
 
 
 
+
+
+
 router.get('/',(req,res) => {
-    res.status(200).render("user/home",{seo:indexSeo.seo["index"],dbBlogYazilari:blogYazilari});
+    res.status(200).render("user/home",{seo:indexSeo.seo["index"],dbBlogYazilari:{}});
 })
 
 router.get('/blog',(req,res)=>{
