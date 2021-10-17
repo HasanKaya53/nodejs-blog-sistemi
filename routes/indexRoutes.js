@@ -7,6 +7,18 @@ router.get('/',(req,res)=>{
     res.status(200).render('home')
 })
 
+router.get('/hakkimizda',(req,res)=>{
+    res.status(200).send("Hakkımızda Sayası")
+})
+
+router.get('/iletisim',(req,res)=>{
+    res.status(200).send("Hakkımızda Sayası")
+})
+
+
+
+
+
 
 
 
